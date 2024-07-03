@@ -73,22 +73,135 @@
           </div>
         </div>
       </section>
-      <section id="projects">
-        <h2>Key Projects</h2>
-        <article>
-          <h3>Project A</h3>
-          <p>
-            Description of Project A highlighting key features and outcomes.
+
+      <section class="why-choose-me">
+        <div class="why-choose-me-content">
+          <h2 class="section-heading">Why Choose Me?</h2>
+          <p class="short-intro">
+            Passionate Architect | Sustainable Design Advocate
           </p>
-        </article>
-        <article>
-          <h3>Project B</h3>
           <p>
-            Description of Project B highlighting key features and outcomes.
+            I am Ubokudom Otuokon, a dedicated Architect and Construction
+            Project Manager with a strong passion for sustainable design. With
+            expertise in merging aesthetic excellence with environmental
+            responsibility, I bring a unique blend of creativity and technical
+            proficiency to every project.
           </p>
-        </article>
+          <p>
+            My track record includes successfully leading diverse architectural
+            projects, where I prioritize innovation, efficiency, and client
+            satisfaction. I am adept at leveraging advanced technologies like
+            AutoCAD, Revit, and SketchUp for 3D modeling and realistic
+            rendering, ensuring projects are delivered with precision and
+            impact.
+          </p>
+          <a href="#contact" class="btn-contact">Contact Me</a>
+        </div>
+        <div class="profile-image">
+          <img src="images/why_me.jpg" alt="Ubokudom Otuokon" />
+        </div>
       </section>
+
+      <div class="project-section">
+        <h2 class="featured-projects-title">Featured Projects</h2>
+        <button id="interior-btn">Interior Design</button>
+        <button id="exterior-btn">Architectural Design</button>
+
+        <div id="interior-projects" class="projects">
+          <div class="project" onclick="openProject('interior1')">
+            <img src="images/interior1.jpg" alt="Interior Project 1" />
+            <p>Interior Project 1</p>
+            <p class="project-description">
+              A contemporary exterior architecture project that blends with the
+              environment.
+            </p>
+          </div>
+
+          <div class="project" onclick="openProject('interior1')">
+            <img src="images/interior1.jpg" alt="Interior Project 1" />
+            <p>Interior Project 1</p>
+            <p class="project-description">
+              A contemporary exterior architecture project that blends with the
+              environment.
+            </p>
+          </div>
+
+          <div class="project" onclick="openProject('interior1')">
+            <img src="images/interior1.jpg" alt="Interior Project 1" />
+            <p>Interior Project 1</p>
+            <p class="project-description">
+              A contemporary exterior architecture project that blends with the
+              environment.
+            </p>
+          </div>
+
+          <div class="project" onclick="openProject('interior1')">
+            <img src="images/interior1.jpg" alt="Interior Project 1" />
+            <p>Interior Project 1</p>
+            <p class="project-description">
+              A contemporary exterior architecture project that blends with the
+              environment.
+            </p>
+          </div>
+          <!-- Add more interior projects -->
+        </div>
+
+        <div id="exterior-projects" class="projects">
+          <div class="project" onclick="openProject('exterior1')">
+            <img src="images/exterior1.jpg" alt="Exterior Project 1" />
+            <p>Exterior Project 1</p>
+            <p class="project-description">
+              A residential building project with sustainable design elements.
+            </p>
+          </div>
+
+          <div class="project" onclick="openProject('exterior1')">
+            <img src="images/exterior1.jpg" alt="Exterior Project 1" />
+            <p>Exterior Project 1</p>
+            <p class="project-description">
+              A residential building project with sustainable design elements.
+            </p>
+          </div>
+
+          <div class="project" onclick="openProject('exterior1')">
+            <img src="images/exterior1.jpg" alt="Exterior Project 1" />
+            <p>Exterior Project 1</p>
+            <p class="project-description">
+              A residential building project with sustainable design elements.
+            </p>
+          </div>
+
+          <div class="project" onclick="openProject('exterior1')">
+            <img src="images/exterior1.jpg" alt="Exterior Project 1" />
+            <p>Exterior Project 1</p>
+            <p class="project-description">
+              A residential building project with sustainable design elements.
+            </p>
+          </div>
+          <!-- Add more exterior projects -->
+        </div>
+      </div>
+
+      <div id="project-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeProject()">&times;</span>
+          <div class="project-display">
+            <button class="prev" onclick="prevPage()">&#10094;</button>
+            <div class="project-pages" id="project-pages">
+              <!-- Dynamic content will be added here -->
+            </div>
+            <button class="next" onclick="nextPage()">&#10095;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add this at the end of your HTML file -->
+      <div id="contact-section">
+        <h2>Contact</h2>
+        <!-- Contact form or details here -->
+      </div>
     </main>
+
     <footer>
       <section id="contact">
         <h2>Contact</h2>
