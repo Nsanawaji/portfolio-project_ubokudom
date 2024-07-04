@@ -17,16 +17,21 @@
     <meta name="author" content="Ubokudom Otuokon" />
     <link rel="stylesheet" href="styles.css" />
     <script src="index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <nav>
       <ul class="container">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact-section">Contact</a></li>
       </ul>
     </nav>
-    <div class="hero">
+    <div class="hero" id="home">
       <div class="hero-text">
         <h2 id="hero-title">Transforming Spaces, Elevating Lives</h2>
         <p>
@@ -95,14 +100,14 @@
             rendering, ensuring projects are delivered with precision and
             impact.
           </p>
-          <a href="#contact" class="btn-contact">Contact Me</a>
+          <a href="#contact-section" class="btn-contact">Contact Me</a>
         </div>
         <div class="profile-image">
           <img src="images/why_me.jpg" alt="Ubokudom Otuokon" />
         </div>
       </section>
 
-      <div class="project-section">
+      <div class="project-section" id="projects">
         <h2 class="featured-projects-title">Featured Projects</h2>
         <button id="interior-btn">Interior Design</button>
         <button id="exterior-btn">Architectural Design</button>
@@ -197,19 +202,66 @@
 
       <!-- Add this at the end of your HTML file -->
       <div id="contact-section">
-        <h2>Contact</h2>
-        <!-- Contact form or details here -->
+        <h2 class="contact-heading">Contact Me</h2>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScSprjLRxaXF9akURlZUAs8kf_GyV6eL9Rx3U5LkDeDLY9Ayw/viewform?embedded=true"
+          width="600"
+          height="700"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >Loading…</iframe
+        >
       </div>
     </main>
 
-    <footer>
-      <section id="contact">
-        <h2>Contact</h2>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section contact-info">
+          <h3>Contact Information</h3>
+          <p>
+            Email:
+            <a href="mailto:ubokudom.otuokon@gmail.com"
+              >ubokudom.otuokon@gmail.com</a
+            >
+          </p>
+          <p>Phone: <a href="tel:+2347032874320">+2347032874320</a></p>
+          <p>
+            WhatsApp:
+            <a href="https://wa.me/+2347032874320">Chat me up now</a>
+          </p>
+          <p>Location: Uyo, Nigeria</p>
+        </div>
+        <div class="footer-section social-media">
+          <h3>Follow Me</h3>
+          <a href="https://www.facebook.com/ubokudom-otuokon" target="_blank"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ubokudom-otuokon/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <div class="footer-section site-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ubokudom Otuokon. All rights reserved.</p>
         <p>
-          For inquiries or further information, please contact Ubokudom at
-          <a href="mailto:ubokudom@example.com">ubokudom@example.com</a>.
+          Designed by
+          <a href="https://www.designerwebsite.com" target="_blank"
+            >Nsanawaji Otuekong</a
+          >
         </p>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
